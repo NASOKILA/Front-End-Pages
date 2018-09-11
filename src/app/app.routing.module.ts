@@ -10,15 +10,19 @@ import { TripComponent } from './components/trip/trip.component';
 import { FormComponent } from './components/form/form.component';
 
 const routes = [
-    { path: 'cars', component: CarsComponent },
-    { path: 'trip', component: TripComponent },
-    { path: 'trips', component: TripComponent },
-    { path: 'laptops', component: LaptopPageComponent },
-    { path: 'company', component: CommunicationCompanyComponent },
-    { path: 'mountains', component: MountansComponent },
-    { path: 'alps', component: AlpsComponent },
-    { path: 'rooms', component: RoomsComponent },
-    { path: 'form', component: FormComponent }
+    { path: '',  children: [
+
+        { path: 'cars', component: CarsComponent },
+        { path: 'trip', component: TripComponent },
+        { path: 'trips', component: TripComponent },
+        { path: 'laptops', component: LaptopPageComponent },
+        { path: 'company', component: CommunicationCompanyComponent },
+        { path: 'mountains', component: MountansComponent },
+        { path: 'alps', component: AlpsComponent },
+        { path: 'rooms', component: RoomsComponent },
+        { path: 'form', component: FormComponent }
+        
+    ]}
 ]
 
 @NgModule({
