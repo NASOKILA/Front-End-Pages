@@ -18,7 +18,7 @@ const routes = [
     { path: 'mountains', component: MountansComponent },
     { path: 'alps', component: AlpsComponent },
     { path: 'rooms', component: RoomsComponent },
-    { path: 'form', component: FormComponent },
+    { path: 'form', component: FormComponent }
 ]
 
 @NgModule({
